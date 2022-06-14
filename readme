@@ -1,0 +1,27 @@
+Switch纯净的Boot0&1文件
+
+一、主机型号区别
+
+ERISTA=软破机，补丁机，机器的序列号第二位是A
+
+MARIKO=续航机，Lite，OLED，机器的序列号第二位是K，J，T
+
+二、还原对应机型
+
+不能在erista机上还原mariko的boot0&1文件，进系统会出错，显示mariko pkg1 on erista
+
+不能在mariko机上还原erista的boot0&1文件，进系统会出错，显示erista pkg1 on mariko
+
+三、还原对应系统
+
+还原真实系统的boot0&1文件，boot0&1的系统版本需对应真实系统版本，才能进真实系统。
+
+还原虚拟系统的boot0&1文件，boot0&1的系统版本需对应虚拟系统版本，才能进虚拟系统。
+
+四、boot0&1的位置
+
+Hekate还原boot0&1到真实系统，纯净的文件在TF:\backup\机码\restore\，文件名为boot0和boot1
+
+SXOS还原boot0&1到真实系统，纯净的文件在TF:\sxos\backup\，文件名为boot0.bin和boot1.bin
+
+虚拟系统按不同类型，SD Files格式的可以直接替换，分区格式的可通过nxnandmanager软件
